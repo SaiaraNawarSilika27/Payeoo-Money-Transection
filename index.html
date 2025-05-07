@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payo</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+     <!-- header section -->
+      <header>
+        <nav>
+            <div class="relative mt-20">
+                <img class="mx-auto " src="assets/bg.png" alt="The background">
+                <img class="absolute  bottom-50 left-48" src="assets/Group.png" alt="Tick sing">
+            </div>
+        </nav>
+      </header>
+      <!-- login from -->
+      <div class="hero -mt-40 ">
+        <div class="">
+          <div class="card bg-base-100  shadow-2xl">
+            <form class="card-body w-[402px] h-[317px]">
+              <fieldset class="fieldset">
+                <label class="label font-medium text-[16px] text-[#080808]">Mobile Number</label>
+                <input id="account-number" type="number" class="input w-[338px] h-[52px] rounded-full bg-[#F4F5F7]" placeholder="Enter your number" required />
+                <label class="label font-medium text-[16px] text-[#080808]">4 Digit PIN</label>
+                <input id="pin-number" type="text" class="input w-[338px] h-[52px] rounded-full bg-[#F4F5F7]" placeholder="Enter 4 Digit PIN" required/>
+                <div><a class="link link-hover">Forgot password?</a></div>
+                <button id="login-btn" class="btn bg-[#0874F2] rounded-full mt-4 text-[#FFFFFF] font-semibold text-xl w-[338px] h-[60px]">Login</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./script/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-slate-800 @container">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-white">
+      <header class="border-b-2 border-gray-500">
+        <nav class="flex justify-between items-center mt-2 p-4">
+          <div class="flex items-center gap-4">
+            <div>
+              <!-- image div -->
+              <img class="w-10 h-10" src="./assets/Group.png" alt="" />
+            </div>
+            <div>
+              <h1 id="">$ <span id="main-balance">4500</span></h1>
+              <p>Available Balance</p>
+            </div>
+          </div>
+          <div>
+            <button class="btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15"
+                />
+              </svg>
+              Log out
+            </button>
+          </div>
+        </nav>
+      </header>
+      <main class="mr-3 ml-3 mt-4">
+        <!-- main start -->
+        <section  class="">
+          <div>
+            <!-- mian start description -->
+            <h1 class="text-[#080808] font-bold text-[24px] leading-[28px]">🔥 Welcome to Payooo!</h1>
+            <p class="text-black/50 font-regular text-[16px] leading-[28px]">
+              Enjoy easy and convenient financial services with us. Cashout
+              charge is low and
+            </p>
+          </div>
+          <div class="cards grid grid-cols-3 mt-4 gap-2">
+           
+                <div id="add-money-div" class="box border cursor-pointer p-4 rounded-sm hover:bg-[#dfe5ed]">
+                    <img class="mx-auto" src="./assets/wallet1.png" alt="Wallet pic">
+                    <h1 class="text-center">Add Money</h1>
+                </div>
+                <div id="cash-out-div" class="box border cursor-pointer p-4 rounded-sm hover:bg-[#dfe5ed]">
+                    <img class="mx-auto" src="./assets/send1.png" alt="Wallet pic">
+                    <h1 class="text-center">Cashout</h1>
+                </div>
+                <div id="transfer-money" class="box border cursor-pointer p-4 rounded-sm hover:bg-[#dfe5ed]">
+                    <img class="mx-auto" src="./assets/money1.png" alt="Wallet pic">
+                    <h1 class="text-center">Transfer Money</h1>
+                </div>
+                <div id="get-bonus-div"class="box border cursor-pointer p-4 rounded-sm hover:bg-[#dfe5ed]">
+                    <img class="mx-auto" src="./assets/bonus1.png" alt="Wallet pic">
+                    <h1 class="text-center">Get Bonus</h1>
+                </div>
+                <div id="pay-bill-div" class="box border cursor-pointer p-4 rounded-sm hover:bg-[#dfe5ed]">
+                    <img class="mx-auto" src="./assets/purse1.png" alt="Wallet pic">
+                    <h1 class="text-center">Pay Bill</h1>
+                </div>
+                <div id="transactions-div" class="box border cursor-pointer p-4 rounded-sm hover:bg-[#dfe5ed]">
+                    <img class="mx-auto" src="./assets/transaction1.png" alt="Wallet pic">
+                    <h1 class="text-center">Transactions</h1>
+                </div>
+            
+          </div>
+        </section>
+        <section id="Add-money" class="mt-4">
+            <div class="">
+                <div class="hero bg-base-200 ">
+                    <div class="hero-content flex-col ">
+                    <h1 class="text-[#080808] font-semibold text-[18px]">ADD Money</h1>
+                      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                          <fieldset class="fieldset">
+                            <legend>Select A Bank</legend>
+                            <select id="select-options" class="select input w-[338px] h-[52px] rounded-full bg-[#F4F5F7]">
+                                <option disabled selected>Select A Bank</option>
+                                <option value="Bikash">Bikash</option>
+                                <option value="Nagadh">Nagad</option>
+                                <option value="dbbl">DBBL</option>
+                              </select>
+                            <label class="label font-medium text-[16px] text-[#080808]">Bank Account Number</label>
+                            <input id="digits-code" type="number" class="input w-[338px] h-[52px] rounded-full bg-[#F4F5F7]" placeholder="Enter 11 digit account number" />
+                            <label class="label font-medium text-[16px] text-[#080808]">Amount to Add</label>
+                            <input id="add-amount" type="number" class="input w-[338px] h-[52px] rounded-full bg-[#F4F5F7]" placeholder="Add Amount to withdraw" />
+                            <label class="label font-medium text-[16px] text-[#080808]">Pin Number</label>
+                            <input id="pin-number"type="text" class="input w-[338px] h-[52px] rounded-full bg-[#F4F5F7]" placeholder="Enter 4 digit pin number" />
+        
+                            <button id="add-money" class="btn bg-[#0874F2] rounded-full mt-4 text-[#FFFFFF] font-semibold text-xl w-[338px] h-[60px]">Add Money</button>
+                          </fieldset>
+                        </div>
+                      </div>
+                    
+                  </div>
+            </div>
+        </section>
+        <section id="Cashout-money">
+            <div class="">
+                <div class="hero bg-base-200 ">
+                    <div class="hero-content flex-col ">
+                    <h1 class="text-[#080808] font-semibold text-[18px]">Cashout</h1>
+                      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                          <fieldset class="fieldset">
+                            <label class="label font-medium text-[16px] text-[#080808]">Agent Number</label>
+                            <input id="cashout-agent-number" type="number" class="input w-[338px] h-[52px] rounded-full bg-[#F4F5F7]" placeholder="Enter 11 digit account number" />
+                            <label class="label font-medium text-[16px] text-[#080808]">Amount</label>
+                            <input id="cashout-amount" type="number" class="input w-[338px] h-[52px] rounded-full bg-[#F4F5F7]" placeholder="Enter amount to withdraw" />
+                            <label class="label font-medium text-[16px] text-[#080808]">Pin Number</label>
+                            <input id="cashout-pin-number"type="text" class="input w-[338px] h-[52px] rounded-full bg-[#F4F5F7]" placeholder="Enter 4 digit pin number" />
+        
+                            <button id="Withdraw-Money" class="btn bg-[#0874F2] rounded-full mt-4 text-[#FFFFFF] font-semibold text-xl w-[338px] h-[60px]">Withdraw Money</button>
+                          </fieldset>
+                        </div>
+                      </div>
+                    
+                  </div>
+            </div>
+        </section>
+        <section id="for-transection">
+          <h1 class="text-[#080808] font-bold text-[18px] pt-4 text-center">Tranhections</h1>
+          <div id="tranjection-containour">
+             <div>
+              <div>
+                <img src="assets/money1.png" alt="">
+              </div>
+              <div>
+               
+              </div>
+             </div>
+          </div>
+        </section>
+      </main>
+    </section>
+    <script src="/utilites/utilites.js"></script>
+    <script src="/script/addMoney.js"></script>
+    <script src="/script/toggol.js"></script>
+    <script src="/script/cashout.js"></script>
+    <script src="/script/tranjection.js"></script>
+  </body>
+</html>
